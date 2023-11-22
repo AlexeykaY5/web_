@@ -1,11 +1,10 @@
 import React from 'react';
 
-
 const Header = () => {
     return(
         <header className='header'>
-            <img src="" alt="" />
-            <div>
+            <div className='header_inst'/>
+            <div className='header_block'>
                 <li>
                     Main
                 </li>
@@ -16,8 +15,8 @@ const Header = () => {
                     Cosmetics
                 </li>
             </div>
-            <img src="" alt="" />
-            <div>
+            <img className='header_logo' src="../img/logo.svg" alt="" />
+            <div className='header_block'>
                 <li>
                     Main
                 </li>
