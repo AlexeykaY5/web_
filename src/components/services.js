@@ -1,3 +1,4 @@
+import '../styles/services.css'
 import React, { Component } from 'react';
 import drilling from '../img/drilling-rig.png';
 import brickwall from '../img/brickwall.png';

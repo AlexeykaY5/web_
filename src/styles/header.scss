@@ -1,0 +1,35 @@
+.header{
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    padding: 20px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    .logo{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img{
+            width: 50px;
+            margin-right: 25px;
+        }
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+    .nav{
+        width: auto;
+        a{
+            margin-left: 25px;
+            border-radius: 10px;
+            padding: 5px;
+            // border: 1px dotted black;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}

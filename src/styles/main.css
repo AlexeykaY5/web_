@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  padding: 50px 0 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .block {
+  width: 50%;
+}
+.main .block h2 {
+  font-size: 3rem;
+}
+.main .block p {
+  font-size: 1.5rem;
+}
+.main .block div {
+  text-align: center;
+  border: 1px solid #1D2671;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 250px;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #1D2671;
+}
+.main .block div:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+.main .image {
+  width: 40%;
+}
+.main .image img {
+  width: 100%;
+  border-radius: 100px 0 0 100px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,12 +1,15 @@
 import '../styles/header.css';
-import logo from '../img/logo.png'
+import logo from '../img/logo__adress.svg';
 import React from 'react';
 
 const Header = () => {
+    const logoClick = () => {
+        window.location.reload();
+    }
     return(
         <header className='header'>
-            <div className='logo'>
-                <img src={logo} alt="logo" style={{ width: "100px" }}/>
+            <div className='logo' onClick={logoClick}>
+                <img src={logo} alt="logo"/>
                 <h1>MyBurenie</h1>
             </div>
             <div className='nav'>
