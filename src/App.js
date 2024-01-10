@@ -7,6 +7,7 @@ import Services from './components/services';
 import AboutUs from './components/aboutUs';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Popup from './components/popup';
 
 
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className='wrapper'>
       <Header/>
+      <Popup/>
       <Main/>
       <Services/>
       <AboutUs/>

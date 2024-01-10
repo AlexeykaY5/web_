@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.popup {
+  width: 40%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 40px;
+}
+.popup .title {
+  display: flex;
+  justify-content: space-between;
+}
+.popup .title h3 {
+  font-size: 1.5rem;
+}
+.popup .title span {
+  width: 30px;
+  height: 30px;
+  transform-origin: center center; /* или 50% 50% */
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+.popup .title span:hover {
+  transform-origin: center center; /* или 50% 50% */
+  transform: rotate(360deg);
+  transition: 0.2s;
+}/*# sourceMappingURL=popup.css.map */

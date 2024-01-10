@@ -1,0 +1,54 @@
+.contact {
+  width: 100%;
+  padding: 0 200px;
+  margin-bottom: 80px;
+}
+.contact .contact_title {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact_title h3 {
+  font-size: 2rem;
+}
+.contact .contact_title div {
+  width: 80px;
+  border: 2px solid #C33764;
+}
+.contact .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .wrap .contact_info {
+  width: 50%;
+}
+.contact .wrap .contact_info h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact .wrap .contact_info p {
+  width: 80%;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.contact .wrap .contact_info p a {
+  color: #000;
+}
+.contact .wrap .contact_info .contact_button {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid #C33764;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #C33764;
+}
+.contact .wrap .contact_block {
+  width: 40%;
+}/*# sourceMappingURL=conatct.css.map */
