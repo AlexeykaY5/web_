@@ -1,26 +1,15 @@
 import './styles/reset.css';
 import './styles/index.css';
 import React from 'react';
-import Header from './components/header';
-import Main from './components/main';
-import Services from './components/services';
-import AboutUs from './components/aboutUs';
-import Contact from './components/contact';
-import Footer from './components/footer';
-import Popup from './components/popup';
 
+import HomePage from './pages/homePage';
 
 
 function App() {
   return (
     <div className='wrapper'>
-      <Header/>
+      <HomePage/>
       <Popup/>
-      <Main/>
-      <Services/>
-      <AboutUs/>
-      <Contact/>
-      <Footer/>
     </div>
   );
 }

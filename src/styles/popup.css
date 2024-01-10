@@ -1,10 +1,14 @@
 @charset "UTF-8";
 .popup {
+  display: none;
+  position: absolute;
+  left: 30%;
   width: 40%;
   margin: auto;
   border: 1px solid black;
   border-radius: 20px;
   padding: 40px;
+  background-color: #fff;
 }
 .popup .title {
   display: flex;
@@ -25,4 +29,84 @@
   transform-origin: center center; /* или 50% 50% */
   transform: rotate(360deg);
   transition: 0.2s;
+}
+.popup .form .form_text {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.popup .form .form_text .form_block {
+  margin-bottom: 15px;
+}
+.popup .form .form_text .form_block p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.popup .form .form_text .form_block input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.popup .form .form_text .form_block input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+.popup .form .form_text .form_block input::-moz-placeholder {
+  color: #999;
+}
+.popup .form .form_text .form_block input::placeholder {
+  color: #999;
+}
+.popup .form .radioButton {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.popup .form .radioButton .radio_block {
+  border: 0;
+  margin: 10px 0;
+  padding: 0;
+}
+.popup .form .radioButton .radio_block div {
+  margin-bottom: 10px;
+}
+.popup .form .radioButton .radio_block div input[type=radio] {
+  display: none;
+}
+.popup .form .radioButton .radio_block div label {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.popup .form .radioButton .radio_block div label:hover {
+  background-color: #f0f0f0;
+}
+.popup .form .radioButton .radio_block div input[type=radio]:checked + label {
+  background-color: #4CAF50;
+  color: #fff;
+  border-color: #4CAF50;
+}
+.popup .form .conf {
+  display: flex;
+  margin-bottom: 20px;
+}
+.popup .form .conf input {
+  margin-right: 10px;
+}
+.popup .form button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 25%;
 }/*# sourceMappingURL=popup.css.map */

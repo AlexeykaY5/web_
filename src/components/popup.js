@@ -12,15 +12,15 @@ class Popup extends Component {
                         <img src={close} alt="" />
                     </span>
                 </div>
-                <form action='form'>
-                    <div>
+                <form action='form' className='form'>
+                    <div className='form_text'>
                         <div className='form_block'>
                             <p>Имя</p>
                             <input type="text" placeholder='Ваше имя'/>
                         </div>
                         <div className='form_block'>
                             <p>Телефон</p>
-                            <input type="telefon" placeholder='Ваше телефон'/>
+                            <input type="telefon" placeholder='Ваш телефон'/>
                         </div>
                         <div className='form_block'>
                             <p>Дополнительная информация</p>
@@ -28,29 +28,28 @@ class Popup extends Component {
                         </div>
                     </div>
                     <div className='radioButton'>
-                        <p>Выберите что нужно сделать</p>
-                        <fieldset>
+                        <p>Выберите :</p>
+                        <fieldset className='radio_block'>
                             <div>
-                                <input id="brickwall" type="radio" name='drone' value="brickwall" checked/>
-                                <label for="brickwall">Обустройство скважин</label>
+                                <input id="brickwall" type="radio" name='drone' value="brickwall" />
+                                <label htmlFor="brickwall">Обустройство скважин</label>
                             </div>
                             <div>
-                                <input id="drill" type="radio" name='drone' value="drill"/>
-                                <label for="drill">Бурение скважины</label>
+                                <input id="drill" type="radio" name='drone' value="drill" />
+                                <label htmlFor="drill">Бурение скважины</label>
                             </div>
                             <div>
-                                <input id="cons" type="radio" name='drone' value="cons"/>
-                                <label for="cons">Тампонаж и консервация</label>
+                                <input id="cons" type="radio" name='drone' value="cons" />
+                                <label htmlFor="cons">Тампонаж и консервация</label>
                             </div>
                             <div>
-                                <input id="heater" type="radio" name='drone' value="heater"/>
-                                <label for="heater">Монтаж отопления</label>
+                                <input id="heater" type="radio" name='drone' value="heater" />
+                                <label htmlFor="heater">Монтаж отопления</label>
                             </div>
                         </fieldset>
-                        
                     </div>
-                    <div>
-                        <input type="check" checked/>
+                    <div className='conf'>
+                        <input type="checkbox"/>
                         <p>Отправляя свои данные вы соглашаетесь с&nbsp;
                             <a href="#!">политикой конфиденциальности</a>
                         </p>
