@@ -1,8 +1,23 @@
 import '../styles/conatct.css';
 import React, { Component } from 'react';
 import image from '../img/contact.png';
+import Popup from './popup';
 
 export default class Contact extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      isPopupOpen: false,
+    };
+  }
+
+  togglePopup = () => {
+    this.setState((prevState) => ({
+      isPopupOpen: !prevState.isPopupOpen,
+    }));
+  };
+
   render() {
     return (
       <section className='contact'>
@@ -22,12 +37,13 @@ export default class Contact extends Component {
               . Или оставьте нам сообщение 
               и мы вам перезвоним. Также мы есть в Viber по данному номеру.
             </p>
-            <div className='contact_button'>Заказать звонок</div>
+            <div className='contact_button' onClick={this.togglePopup}>Заказать звонок</div>
           </div>
           <div className='contact_block'>
             <img src={image} alt="people-with-drillmachine"/>
           </div>
         </div>
+        {this.state.isPopupOpen && <Popup onClose={this.togglePopup} />}
       </section>
     )
   }

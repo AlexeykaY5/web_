@@ -39,6 +39,7 @@
   color: #000;
 }
 .contact .wrap .contact_info .contact_button {
+  cursor: pointer;
   padding: 15px;
   font-size: 1.2rem;
   font-weight: bold;
